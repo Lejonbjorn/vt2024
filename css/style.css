@@ -1,1 +1,9 @@
-/* Denna fil skall innehålla din CSS kod */
+#wrapper{
+display:grid;
+width: 100vh;
+}
+
+header{
+    grid-area: hd;
+}
+
