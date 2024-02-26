@@ -1,9 +1,104 @@
 #wrapper{
-display:grid;
+display: grid;
 width: 100vh;
+margin: auto;
+grid-template-areas: 
+'hd hd '
+'dv dv '
+'nv nv '
+'mn mn '
+'ft ft ';
 }
 
 header{
+    display: flex;
     grid-area: hd;
+    background-color: #3498db;
+    justify-content: center;
 }
 
+header h1{
+    background-color: white;
+    height: 50%;
+    width: 50%;
+    color: #3498db;
+    text-align: center;
+}
+
+div{
+ grid-area: dv;
+}
+
+nav{
+    grid-area: nv;
+    display: block;
+}
+
+main{
+    grid-area: mn;
+}
+
+footer{
+    grid-area: ft;
+    background-color: #3498db;
+    width: auto;
+    height:20px;
+
+}
+
+#hamburger {
+    display:none;
+}
+
+@media screen and (max-width:600px){
+    body{
+        background-color: rgb(83, 132, 177);
+    }
+
+    header{
+        position:relative;
+    }
+
+    #hamburger {
+        /* border: 3px solid black; */
+        height: 1.5rem;
+        width: 2.2rem;
+        position:absolute;
+        top: 0.7rem;
+        right:0.7rem;
+    }
+
+    #hamburger div {
+        border: 2px solid black;
+        margin: 0.3rem;
+    }
+  
+    }
+
+    nav {
+        justify-content: center;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    nav.active {
+        max-height: 1000px;
+    }
+
+    nav ul {
+        display: block;
+        padding:0;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    nav ul li a {
+        width: 100%;
+        height: 100%;
+    }
+
+    nav ul li:hover {
+        background-color: rgb(147, 174, 148);
+    }
