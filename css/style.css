@@ -3,11 +3,11 @@ display: grid;
 width: 100vh;
 margin: auto;
 grid-template-areas: 
-'hd hd '
-'dv dv '
-'nv nv '
-'mn mn '
-'ft ft ';
+'hd hd'
+'dv dv'
+'nv nv'
+'mn mn'
+'ft ft';
 }
 
 header{
@@ -31,7 +31,24 @@ div{
 
 nav{
     grid-area: nv;
-    display: block;
+    display: flex;
+    background-color: #3498db;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: 1rem 0.5rem 1rem;
+}
+
+nav ul li a {
+    color: antiquewhite;
+    text-decoration: none;
+    
 }
 
 main{
@@ -43,6 +60,7 @@ footer{
     background-color: #3498db;
     width: auto;
     height:20px;
+    display: grid;
 
 }
 
@@ -73,7 +91,16 @@ footer{
         margin: 0.3rem;
     }
   
+    #hamburger #line1{
+        border-color: white;
     }
+    #hamburger #line2 {
+        border-color: white;
+    }
+    #hamburger #line3 {
+        border-color: white;
+    }
+    
 
     nav {
         justify-content: center;
@@ -102,3 +129,4 @@ footer{
     nav ul li:hover {
         background-color: rgb(147, 174, 148);
     }
+}
