@@ -1,80 +1,110 @@
-#wrapper{
-display: grid;
-width: 100vh;
-margin: auto;
-grid-template-areas: 
-'hd hd'
-'dv dv'
-'nv nv'
-'mn mn'
-'ft ft';
+#wrapper {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    'hd' 
+    'nv'
+    'ft'
+    'main';
 }
 
-header{
+
+header {
     display: flex;
     grid-area: hd;
-    background-color: #3498db;
     justify-content: center;
 }
 
-header h1{
-    background-color: white;
-    height: 50%;
-    width: 50%;
-    color: #3498db;
+header h1 {
     text-align: center;
+    width: 20vh;
+    color: #3498db;
+    font-size: 40pt;
+
 }
 
-div{
- grid-area: dv;
-}
-
-nav{
+nav {
     grid-area: nv;
     display: flex;
-    background-color: #3498db;
+    justify-content: center;
+    font-size: 15pt;
 }
 
 nav ul {
     display: flex;
-
 }
 
 nav ul li {
     list-style: none;
     margin: 1rem 0.5rem 1rem;
+
 }
 
 nav ul li a {
-    color: antiquewhite;
+    color: #3498db;
     text-decoration: none;
     
 }
 
-main{
-    grid-area: mn;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-footer{
-    grid-area: ft;
+main {
+ grid-area: main;
+ display: flex;
+ justify-content: space-between;
+ 
+}
+
+#cr1{
+    height: 20vh;
+    width: 20vh;
+    color:white;
+    background-image: url(/img/chihuahua.jpeg);
+}
+
+#cr2{
     background-color: #3498db;
-    width: auto;
-    height:20px;
-    display: grid;
-
+    height: 20vh;
+    width: 20vh;
+    color:white;
 }
 
-#hamburger {
-    display:none;
+#cr3{
+    background-color: #3498db;
+    height: 20vh;
+    width: 20vh;
+    color:white;
+}
+
+#cr4{
+    background-color: #3498db;
+    height: 20vh;
+    width: 20vh;
+
+    color:white;
+}
+
+footer {
+    grid-area: ft;
+    background-color: #3498db ;
+    height: 20%;
+    color: white;
 }
 
 @media screen and (max-width:600px){
     body{
-        background-color: rgb(83, 132, 177);
+        background-color: #3074a1;
     }
 
     header{
         position:relative;
+    }
+
+    header h1 {
+        color: white;
     }
 
     #hamburger {
@@ -87,11 +117,10 @@ footer{
     }
 
     #hamburger div {
-        border: 2px solid black;
+        border: 2px solid white;
         margin: 0.3rem;
     }
-  
-    #hamburger #line1{
+    #hamburger #line {
         border-color: white;
     }
     #hamburger #line2 {
@@ -100,7 +129,6 @@ footer{
     #hamburger #line3 {
         border-color: white;
     }
-    
 
     nav {
         justify-content: center;
@@ -113,7 +141,6 @@ footer{
     }
 
     nav ul {
-        display: block;
         padding:0;
     }
 
@@ -124,9 +151,15 @@ footer{
     nav ul li a {
         width: 100%;
         height: 100%;
+        color: white;
     }
 
     nav ul li:hover {
-        background-color: rgb(147, 174, 148);
+    text-decoration: underline;
+    }
+
+    footer{
+        background-color: white;
+        color: #3074a1;
     }
 }
