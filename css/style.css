@@ -3,22 +3,25 @@
     margin: auto;
     display: grid;
     grid-template-areas: 
-    'hd' 
+    'hd'
     'nv'
     'ft'
-    'main';
+    ;
 }
 
-
 header {
-    display: flex;
     grid-area: hd;
-    justify-content: center;
+    text-align: center;
+}
+
+header h2 {
+width: 10vh;
+height: 10vh;
+background-image: url(/img/petpallogo.png);
+background-size: cover;
 }
 
 header h1 {
-    text-align: center;
-    width: 20vh;
     color: #3498db;
     font-size: 40pt;
 
@@ -52,39 +55,39 @@ nav ul li a:hover {
 }
 
 main {
- grid-area: main;
- display: flex;
- justify-content: space-between;
- 
+ display:flex;
+ color: white;
+ justify-content: space-evenly;
+ align-content: center;
+
 }
 
 #cr1{
     height: 20vh;
     width: 20vh;
-    color:white;
     background-image: url(/img/chihuahua.jpeg);
+    background-size: cover;
 }
 
 #cr2{
-    background-color: #3498db;
     height: 20vh;
     width: 20vh;
-    color:white;
+    background-image: url(/img/goofycat.webp);
+    background-size: cover;
 }
 
 #cr3{
-    background-color: #3498db;
     height: 20vh;
     width: 20vh;
-    color:white;
+    background-image: url(/img/pigeon.jpeg);
+    background-size: cover;
 }
 
 #cr4{
-    background-color: #3498db;
     height: 20vh;
     width: 20vh;
-
-    color:white;
+    background-image: url(/img/bighamster.jpeg);
+    background-size: cover;
 }
 
 footer {
