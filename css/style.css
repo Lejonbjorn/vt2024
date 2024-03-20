@@ -157,6 +157,10 @@ footer {
         color: white;
     }
 
+    main {
+        flex-wrap: wrap;
+    }
+
     nav ul li:hover {
     text-decoration: underline;
     }
