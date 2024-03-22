@@ -1,0 +1,172 @@
+#wrapper {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    'hd'
+    'nv'
+    'ft'
+    ;
+}
+
+header {
+    grid-area: hd;
+    text-align: center;
+}
+
+header h2 {
+width: 10vh;
+height: 10vh;
+background-image: url(/img/petpallogo.png);
+background-size: cover;
+}
+
+header h1 {
+    color: #3498db;
+    font-size: 40pt;
+
+}
+
+nav {
+    grid-area: nv;
+    display: flex;
+    justify-content: center;
+    font-size: 15pt;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 1rem 0.5rem 1rem;
+
+}
+
+nav ul li a {
+    color: #3498db;
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+ display:flex;
+ color: white;
+ justify-content: space-evenly;
+ align-content: center;
+
+}
+
+#cr1{
+    height: 20vh;
+    width: 20vh;
+    background-image: url(/img/chihuahua.jpeg);
+    background-size: cover;
+}
+
+#cr2{
+    height: 20vh;
+    width: 20vh;
+    background-image: url(/img/goofycat.webp);
+    background-size: cover;
+}
+
+#cr3{
+    height: 20vh;
+    width: 20vh;
+    background-image: url(/img/pigeon.jpeg);
+    background-size: cover;
+}
+
+#cr4{
+    height: 20vh;
+    width: 20vh;
+    background-image: url(/img/bighamster.jpeg);
+    background-size: cover;
+}
+
+footer {
+    grid-area: ft;
+    background-color: #3498db ;
+    height: 20%;
+    color: white;
+}
+
+@media screen and (max-width:600px){
+    body{
+        background-color: #3074a1;
+    }
+
+    header{
+        position:relative;
+    }
+
+    header h1 {
+        color: white;
+    }
+
+    #hamburger {
+        /* border: 3px solid black; */
+        height: 1.5rem;
+        width: 2.2rem;
+        position:absolute;
+        top: 0.7rem;
+        right:0.7rem;
+    }
+
+    #hamburger div {
+        border: 2px solid white;
+        margin: 0.3rem;
+    }
+    #hamburger #line {
+        border-color: white;
+    }
+    #hamburger #line2 {
+        border-color: white;
+    }
+    #hamburger #line3 {
+        border-color: white;
+    }
+
+    nav {
+        justify-content: center;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    nav.active {
+        max-height: 1000px;
+    }
+
+    nav ul {
+        padding:0;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    nav ul li a {
+        width: 100%;
+        height: 100%;
+        color: white;
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    nav ul li:hover {
+    text-decoration: underline;
+    }
+
+    footer{
+        background-color: white;
+        color: #3074a1;
+    }
+}
