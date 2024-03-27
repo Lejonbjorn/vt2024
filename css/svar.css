@@ -55,7 +55,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-main section {
+main div {
     margin-bottom: 1em;
     padding: 1em;
     display: flex;
